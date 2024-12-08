@@ -43,7 +43,7 @@
                 "LowSubject": "value",
                 "LowValue": "0",
                 "Guid": "99e44494-39f0-44d8-a93b-d0f8105d634e",
-                "Id": "lan1-SMEMAMachineReady[0]"
+                "Id": "lan1-SMEMAMachineReady"
               }
             ]
           },
@@ -64,7 +64,7 @@
                 "LowSubject": "value",
                 "LowValue": "0",
                 "Guid": "abfaa88a-3dc5-41d5-af13-173ec91210de",
-                "Id": "lan1-SMEMAGoodBoardReady[0]"
+                "Id": "lan1-SMEMABoardAvailable"
               }
             ]
           },
@@ -85,7 +85,7 @@
                 "LowSubject": "value",
                 "LowValue": "0",
                 "Guid": "abcc898c-88c8-436f-8943-66b908013050",
-                "Id": "lan1-SMEMABadBoardReady[0]"
+                "Id": "lan1-SMEMAFailedBoardAvailable"
               }
             ]
           }
