@@ -1,0 +1,501 @@
+{
+    "extensions": [{
+            "assembly": "MultiPlug.Ext.Network.SSDP",
+            "version": "1.0.1.0",
+            "properties": {
+                "SSDPs": [{
+                        "Guid": "08868fca-4053-4e0e-8e52-1b2fd5e45664",
+                        "DiscoveryEvent": {
+                            "Guid": "08868fca-4053-4e0e-8e52-1b2fd5e45664",
+                            "Id": "SSDP-Brainboxes",
+                            "Description": "Brainboxes have been discovered",
+                            "Group": "",
+                            "Subjects": ["Location", "DeviceType", "FriendlyName", "Manufacturer", "ManufacturerURL", "ModelDescription", "ModelName", "ModelNumber", "UDN", "SerialNumber", "PresentationURL"],
+                            "Keys": ["Location", "DeviceType", "FriendlyName", "Manufacturer", "ManufacturerURL", "ModelDescription", "ModelName", "ModelNumber", "UDN", "SerialNumber", "PresentationURL"]
+                        },
+                        "DiscoveryTarget": "urn:schemas-upnp-org:device:BrainboxesED:1",
+                        "SearchSubscription": {
+                            "Guid": "08868fca-4053-4e0e-8e52-1b2fd5e45664",
+                            "Id": "Start-SSDP-Discovery"
+                        }
+                    }
+                ]
+            }
+        }, {
+            "assembly": "MultiPlug.Ext.Brainboxes",
+            "version": "1.0.15.0",
+            "properties": {
+                "Devices": [{
+                        "ConnectButtonEvent": {
+                            "Guid": "db357e88-3644-4bf9-8b96-c4c973817f57",
+                            "Id": "f6a3a361-5c4d-4682-98f0-a6d707aafd7d",
+                            "Description": "System Event: Connect to device",
+                            "Group": "",
+                            "Subjects": [],
+                            "Keys": []
+                        },
+                        "RestartButtonEvent": {
+                            "Guid": "0fddc8b6-eeba-4312-b088-4d6910484eda",
+                            "Id": "c185aea1-f47f-4a47-9a4a-66ab53d775aa",
+                            "Description": "System Event: Restart the device",
+                            "Group": "",
+                            "Subjects": [],
+                            "Keys": []
+                        },
+                        "Name": "ED-038",
+                        "IP": "0.0.0.0",
+                        "Guid": "2e7aba6a-6546-4d15-953e-602565b83eff",
+                        "MACAddress": "",
+                        "AutoConnect": false,
+                        "Outputs": [{
+                                "Name": "0",
+                                "Subscriptions": [{
+                                        "HighSubject": "value",
+                                        "HighValue": "1",
+                                        "LowSubject": "value",
+                                        "LowValue": "0",
+                                        "Guid": "86bd1d9e-0a49-4639-9e5d-3b40c2454132",
+                                        "Id": "UIToggle834c5420-da0d-4441-b957-3e0ff6102609"
+                                    }, {
+                                        "HighSubject": "value",
+                                        "HighValue": "1",
+                                        "LowSubject": "value",
+                                        "LowValue": "0",
+                                        "Guid": "99e44494-39f0-44d8-a93b-d0f8105d634e",
+                                        "Id": "lan1-SMEMAMachineReady"
+                                    }
+                                ]
+                            }, {
+                                "Name": "1",
+                                "Subscriptions": [{
+                                        "HighSubject": "value",
+                                        "HighValue": "1",
+                                        "LowSubject": "value",
+                                        "LowValue": "0",
+                                        "Guid": "2691fa27-7c4a-4fa2-b314-0e1b83963252",
+                                        "Id": "UIToggle7ac9e21e-d2a4-4c1e-80d9-9a397e46d3ed"
+                                    }, {
+                                        "HighSubject": "value",
+                                        "HighValue": "1",
+                                        "LowSubject": "value",
+                                        "LowValue": "0",
+                                        "Guid": "abfaa88a-3dc5-41d5-af13-173ec91210de",
+                                        "Id": "lan1-SMEMABoardAvailable"
+                                    }
+                                ]
+                            }, {
+                                "Name": "2",
+                                "Subscriptions": [{
+                                        "HighSubject": "value",
+                                        "HighValue": "1",
+                                        "LowSubject": "value",
+                                        "LowValue": "0",
+                                        "Guid": "7a743045-051c-475a-9fe1-47fdbaccf8e5",
+                                        "Id": "UIToggled312b8fa-aa28-4dcc-abac-f768c84e45fb"
+                                    }, {
+                                        "HighSubject": "value",
+                                        "HighValue": "1",
+                                        "LowSubject": "value",
+                                        "LowValue": "0",
+                                        "Guid": "abcc898c-88c8-436f-8943-66b908013050",
+                                        "Id": "lan1-SMEMAFailedBoardAvailable"
+                                    }
+                                ]
+                            }
+                        ],
+                        "IOEvents": [{
+                                "IONumber": 0,
+                                "RisingEdgeValue": "1",
+                                "FallingEdgeValue": "0",
+                                "Guid": "37de499d-c29a-441d-aa0a-cb86613ed69c",
+                                "Id": "SMEMA-1-B-1",
+                                "Description": "SMEMA Lane 1 Port B Good PCB",
+                                "Group": "",
+                                "Subjects": ["value"],
+                                "Keys": ["value"]
+                            }, {
+                                "IONumber": 1,
+                                "RisingEdgeValue": "1",
+                                "FallingEdgeValue": "0",
+                                "Guid": "2fce23a4-3435-4214-84e0-6b5afcd4f27f",
+                                "Id": "SMEMA-1-B-2",
+                                "Description": "SMEMA Lane 1 Port B Bad PCB",
+                                "Group": "",
+                                "Subjects": ["value"],
+                                "Keys": ["value"]
+                            }, {
+                                "IONumber": 2,
+                                "RisingEdgeValue": "1",
+                                "FallingEdgeValue": "0",
+                                "Guid": "d27cc852-5f7f-4f09-8944-7d491a43757d",
+                                "Id": "SMEMA-1-A-1",
+                                "Description": "SMEMA Lane 1 Port A Machine Ready",
+                                "Group": "",
+                                "Subjects": ["value"],
+                                "Keys": ["value"]
+                            }
+                        ]
+                    }, {
+                        "ConnectButtonEvent": {
+                            "Guid": "38a60d81-2dd7-4948-95bc-ba42121efca0",
+                            "Id": "b5332b0a-5738-40a2-b30a-0f68b82142a5",
+                            "Description": "System Event: Connect to device",
+                            "Group": "",
+                            "Subjects": [],
+                            "Keys": []
+                        },
+                        "RestartButtonEvent": {
+                            "Guid": "ae0cbcbd-7f5b-4cc0-83a5-63c0cca139b7",
+                            "Id": "7129b6dc-b9da-490c-98af-8d21c28b2cf7",
+                            "Description": "System Event: Restart the device",
+                            "Group": "",
+                            "Subjects": [],
+                            "Keys": []
+                        },
+                        "Name": "ED-004pp",
+                        "IP": "192.168.1.9",
+                        "Guid": "b4ce4ae3-1eec-4b5f-8fd7-b7221996e23d",
+                        "MACAddress": "000A4F05221A",
+                        "AutoConnect": false,
+                        "Outputs": [],
+                        "IOEvents": []
+                    }, {
+                        "ConnectButtonEvent": {
+                            "Guid": "c2dfa790-5f9d-41bb-8675-aeac93129cd0",
+                            "Id": "fe244b7c-3b59-4619-921f-f06e37b97fb6",
+                            "Description": "System Event: Connect to device",
+                            "Group": "",
+                            "Subjects": [],
+                            "Keys": []
+                        },
+                        "RestartButtonEvent": {
+                            "Guid": "73678ea3-f536-4e3e-b6b7-e6c9ac40552f",
+                            "Id": "a8438ae3-4d7b-41b0-a1ed-087c114afc8a",
+                            "Description": "System Event: Restart the device",
+                            "Group": "",
+                            "Subjects": [],
+                            "Keys": []
+                        },
+                        "Name": "ED-038",
+                        "IP": "192.168.1.15",
+                        "Guid": "2d81186a-5da2-4c6f-884b-b4d49affca2d",
+                        "MACAddress": "000A4F057C5E",
+                        "AutoConnect": false,
+                        "Outputs": [],
+                        "IOEvents": []
+                    }, {
+                        "ConnectButtonEvent": {
+                            "Guid": "73b24fb7-da64-47db-9a9e-999e376bed23",
+                            "Id": "65ac16b9-951b-4087-a315-1e28f8b346e3",
+                            "Description": "System Event: Connect to device",
+                            "Group": "",
+                            "Subjects": [],
+                            "Keys": []
+                        },
+                        "RestartButtonEvent": {
+                            "Guid": "54658be0-6ea0-411d-81ff-1f74cf5d8b37",
+                            "Id": "1a508fd4-3a26-4ac0-b630-f0727fe28f3c",
+                            "Description": "System Event: Restart the device",
+                            "Group": "",
+                            "Subjects": [],
+                            "Keys": []
+                        },
+                        "Name": "ED-588",
+                        "IP": "192.168.1.186",
+                        "Guid": "1938e672-93e4-42d0-8b0d-bea7c799e914",
+                        "MACAddress": "000A4F055979",
+                        "AutoConnect": false,
+                        "Outputs": [],
+                        "IOEvents": []
+                    }
+                ],
+                "Discovery": {
+                    "Properties": {
+                        "DiscoverySubscription": {
+                            "Guid": "eb5274b7-5c90-40e0-b115-a9a9957fdf59",
+                            "Id": "SSDP-Brainboxes"
+                        },
+                        "StartDeviceDiscovery": {
+                            "Guid": "2e8a9d80-9123-4f95-8f2a-3a4085735b5f",
+                            "Id": "Start-SSDP-Discovery",
+                            "Description": "Starts the Device Discovery routine by a user action.",
+                            "Group": "",
+                            "Subjects": [],
+                            "Keys": []
+                        }
+                    }
+                },
+                "Defaults": {
+                    "Key": "value",
+                    "RisingEdge": "1",
+                    "FallingEdge": "0"
+                }
+            }
+        }, {
+            "assembly": "MultiPlug.Ext.SMEMA",
+            "version": "1.0.19.0",
+            "properties": {
+                "GlobalStatusEvent": {
+                    "Guid": "c09bc9cf-9cee-4223-9372-e53a257ac3ee",
+                    "Id": "SMEMA.Global.Status",
+                    "Description": "Global Status for all Lanes",
+                    "Group": "",
+                    "Subjects": ["blocked"],
+                    "Keys": ["blocked"]
+                },
+                "Lanes": [{
+                        "BoardAvailable": {
+                            "SMEMAMachineReadyEvent": {
+                                "HighValue": "1",
+                                "LowValue": "0",
+                                "HighDelay": 0,
+                                "LowDelay": 0,
+                                "Guid": "22bfcdbb-cce7-4d8d-b33d-aab9417cc6f6",
+                                "Id": "lan1-SMEMAMachineReady",
+                                "Description": "SMEMA Machine Ready",
+                                "Group": "lan1",
+                                "Subjects": ["value"],
+                                "Keys": ["value"]
+                            },
+                            "SMEMABoardAvailableSubscription": {
+                                "Value": "1",
+                                "Guid": "90eee374-38db-4488-9fac-589f56eb9c55",
+                                "Id": "SMEMA-1-B-1"
+                            },
+                            "SMEMAFailedBoardAvailableSubscription": {
+                                "Value": "1",
+                                "Guid": "c7a3efff-e97a-4677-ac47-585dd76ab790",
+                                "Id": "SMEMA-1-B-2"
+                            },
+                            "SMEMAFlipBoardSubscription": {
+                                "Value": "1",
+                                "Guid": "9e97402a-4ead-4d03-909c-8b891e1613f0",
+                                "Id": ""
+                            },
+                            "SMEMABoardAvailableAlways": false,
+                            "SMEMAFailedBoardAvailableAlways": false,
+                            "SMEMAFlipBoardAlways": false
+                        },
+                        "MachineReady": {
+                            "SMEMAMachineReadySubscription": {
+                                "Value": "1",
+                                "Guid": "a49581a7-3f45-4059-87c4-0b884d5d2d59",
+                                "Id": "SMEMA-1-A-1"
+                            },
+                            "SMEMABoardAvailableEvent": {
+                                "HighValue": "1",
+                                "LowValue": "0",
+                                "HighDelay": 0,
+                                "LowDelay": 0,
+                                "Guid": "8a9da065-6f10-473d-9b58-825954ac9986",
+                                "Id": "lan1-SMEMABoardAvailable",
+                                "Description": "Good Board Available",
+                                "Group": "lan1",
+                                "Subjects": ["value"],
+                                "Keys": ["value"]
+                            },
+                            "SMEMAFailedBoardAvailableEvent": {
+                                "HighValue": "1",
+                                "LowValue": "0",
+                                "HighDelay": 0,
+                                "LowDelay": 0,
+                                "Guid": "2c380808-ba6d-4822-94bd-1bc20da38957",
+                                "Id": "lan1-SMEMAFailedBoardAvailable",
+                                "Description": "Bad Board Available",
+                                "Group": "lan1",
+                                "Subjects": ["value"],
+                                "Keys": ["value"]
+                            },
+                            "SMEMAFlipBoardEvent": {
+                                "HighValue": "1",
+                                "LowValue": "0",
+                                "HighDelay": 0,
+                                "LowDelay": 0,
+                                "Guid": "09d638d7-1636-441e-8fe3-7a910eb71294",
+                                "Id": "lan1-SMEMAFlipBoard",
+                                "Description": "Flip Board",
+                                "Group": "lan1",
+                                "Subjects": ["value"],
+                                "Keys": ["value"]
+                            },
+                            "SMEMAMachineReadyAlways": false
+                        },
+                        "Interlock": {
+                            "MachineReadyInterlockSubscription": {
+                                "Block": "",
+                                "Unblock": "",
+                                "LatchOn": "",
+                                "LatchOff": "",
+                                "Guid": "3c40d709-2df6-4cb6-95d3-4beff1878c73",
+                                "Id": ""
+                            },
+                            "GoodBoardInterlockSubscription": {
+                                "Block": "",
+                                "Unblock": "",
+                                "LatchOn": "",
+                                "LatchOff": "",
+                                "DivertOn": "",
+                                "DivertOff": "",
+                                "DivertLatchOn": "",
+                                "DivertLatchOff": "",
+                                "UnblockFlipOn": "",
+                                "BlockFlipOff": "",
+                                "DivertOnFlipOn": "",
+                                "DivertOffFlipOff": "",
+                                "Guid": "81b74195-35ac-4873-aff1-6e2f57d78251",
+                                "Id": ""
+                            },
+                            "BadBoardInterlockSubscription": {
+                                "Block": "",
+                                "Unblock": "",
+                                "LatchOn": "",
+                                "LatchOff": "",
+                                "DivertOn": "",
+                                "DivertOff": "",
+                                "DivertLatchOn": "",
+                                "DivertLatchOff": "",
+                                "UnblockFlipOn": "",
+                                "BlockFlipOff": "",
+                                "DivertOnFlipOn": "",
+                                "DivertOffFlipOff": "",
+                                "Guid": "51c2e5b2-0c33-49c8-9522-cfd4a054adbe",
+                                "Id": ""
+                            },
+                            "FlipBoardInterlockSubscription": {
+                                "Block": "",
+                                "Unblock": "",
+                                "LatchOn": "",
+                                "LatchOff": "",
+                                "Guid": "0f2da0b6-ea64-4185-9b6d-98c0fcc2491e",
+                                "Id": ""
+                            },
+                            "MachineReadyEvent": {
+                                "Guid": "99d156d6-ed79-4cc9-b496-0ced96109092",
+                                "Id": "lan1-Interlock.MachineReady",
+                                "Description": "Machine Ready Interlock",
+                                "Group": "lan1",
+                                "Subjects": ["value", "enabled", "interlock-latched"],
+                                "Keys": ["value", "enabled", "interlock-latched"]
+                            },
+                            "GoodBoardEvent": {
+                                "Guid": "2d091782-9d5a-42af-b0c1-7d66bb467796",
+                                "Id": "lan1-Interlock.GoodBoard",
+                                "Description": "Good Board Interlock",
+                                "Group": "lan1",
+                                "Subjects": ["value", "enabled", "interlock-latched", "divert", "divert-latched"],
+                                "Keys": ["value", "enabled", "interlock-latched", "divert", "divert-latched"]
+                            },
+                            "BadBoardEvent": {
+                                "Guid": "27b43d41-78dd-44b1-8b92-110b40f5abe1",
+                                "Id": "lan1-Interlock.BadBoard",
+                                "Description": "Bad Board Interlock",
+                                "Group": "lan1",
+                                "Subjects": ["value", "enabled", "interlock-latched", "divert", "divert-latched"],
+                                "Keys": ["value", "enabled", "interlock-latched", "divert", "divert-latched"]
+                            },
+                            "MachineReadyBlockEvent": {
+                                "BlockedValue": "true",
+                                "UnblockedValue": "false",
+                                "BlockedEnabled": false,
+                                "UnblockedEnabled": false,
+                                "BlockedDelay": 0,
+                                "UnblockedDelay": 0,
+                                "Guid": "3d817a5c-8ae9-49bf-bb2e-8f8b671989a6",
+                                "Id": "lan1-Interlock.MachineReady.Block",
+                                "Description": "Machine Ready Interlock Blocking",
+                                "Group": "lan1",
+                                "Subjects": ["blocked", "smema"],
+                                "Keys": ["blocked", "smema"]
+                            },
+                            "GoodBoardBlockEvent": {
+                                "BlockedValue": "true",
+                                "UnblockedValue": "false",
+                                "BlockedEnabled": false,
+                                "UnblockedEnabled": false,
+                                "BlockedDelay": 0,
+                                "UnblockedDelay": 0,
+                                "Guid": "08a99584-3bf1-4610-9188-da6b79e842ab",
+                                "Id": "lan1-Interlock.GoodBoard.Block",
+                                "Description": "Good Board Interlock Blocking",
+                                "Group": "lan1",
+                                "Subjects": ["blocked", "smema"],
+                                "Keys": ["blocked", "smema"]
+                            },
+                            "BadBoardBlockEvent": {
+                                "BlockedValue": "true",
+                                "UnblockedValue": "false",
+                                "BlockedEnabled": false,
+                                "UnblockedEnabled": false,
+                                "BlockedDelay": 0,
+                                "UnblockedDelay": 0,
+                                "Guid": "27782f6d-8a2f-48ad-89b3-5bffe5ec0dbd",
+                                "Id": "lan1-Interlock.BadBoard.Block",
+                                "Description": "Bad Board Interlock Blocking",
+                                "Group": "lan1",
+                                "Subjects": ["blocked", "smema"],
+                                "Keys": ["blocked", "smema"]
+                            },
+                            "FlipBoardBlockEvent": {
+                                "BlockedValue": "true",
+                                "UnblockedValue": "false",
+                                "BlockedEnabled": false,
+                                "UnblockedEnabled": false,
+                                "BlockedDelay": 0,
+                                "UnblockedDelay": 0,
+                                "Guid": "472cec1e-8763-4f75-ac2f-6b51ea0a6aaa",
+                                "Id": "lan1-Interlock.FlipBoard.Block",
+                                "Description": "Flip Board Interlock Blocking",
+                                "Group": "lan1",
+                                "Subjects": ["blocked", "smema"],
+                                "Keys": ["blocked", "smema"]
+                            },
+                            "FlipBoardEvent": {
+                                "Guid": "392a01bf-891f-407b-b0c9-b653315f52a3",
+                                "Id": "lan1-Interlock.FlipBoard",
+                                "Description": "Flip Board Interlock",
+                                "Group": "lan1",
+                                "Subjects": ["value", "enabled", "interlock-latched"],
+                                "Keys": ["value", "enabled", "interlock-latched"]
+                            },
+                            "StartupMachineReady": 0,
+                            "StartupGoodBoard": 0,
+                            "StartupBadBoard": 0,
+                            "StartupFlipBoard": 0,
+                            "PersistentMachineReady": false,
+                            "PersistentMachineReadyLatch": false,
+                            "PersistentGoodBoard": false,
+                            "PersistentGoodBoardLatch": false,
+                            "PersistentBadBoard": false,
+                            "PersistentBadBoardLatch": false,
+                            "PersistentFlipBoard": false,
+                            "PersistentFlipBoardLatch": false,
+                            "PermissionInterfaceUI": true,
+                            "PermissionInterfaceREST": true,
+                            "PermissionInterfaceSubscriptions": true,
+                            "TriggerBlockGoodBoardOnMachineNotReady": false,
+                            "TriggerBlockBadBoardOnMachineNotReady": false,
+                            "TriggerBlockFlipBoardOnMachineNotReady": false,
+                            "TriggerBlockFlipBoardOnGoodBoardNotAvailable": false,
+                            "TriggerBlockFlipBoardOnBadBoardNotAvailable": false,
+                            "DelayFlipThenBoardAvailable": 0,
+                            "DelayGoodBoardUnblockedThenSMEMA": 0,
+                            "DelayGoodBoardDivertUnblockedThenSMEMA": 0,
+                            "DelayBadBoardUnblockedThenSMEMA": 0,
+                            "DelayBadBoardDivertUnblockedThenSMEMA": 0,
+                            "DelayMachineReadyUnblockedThenSMEMA": 0,
+                            "DelayFlipUnblockedThenSMEMA": 0
+                        },
+                        "BeaconTower": {
+                            "BeaconTowerEvents": []
+                        },
+                        "Guid": "lan1",
+                        "LaneId": "1",
+                        "MachineId": "Interlock A",
+                        "RightToLeft": false,
+                        "LoggingLevel": 0
+                    }
+                ]
+            }
+        }
+    ]
+}
