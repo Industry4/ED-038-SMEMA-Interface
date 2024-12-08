@@ -147,7 +147,7 @@
         },
         "StartDeviceDiscovery": {
           "Guid": "6e63864d-f0b1-4889-b9e9-e304f39fe6d1",
-          "Id": "092ffe59-2b73-4b75-8604-5023774b6b80",
+          "Id": "Start-SSDP-Discovery",
           "Description": "Starts the Device Discovery routine by a user action.",
           "Group": "",
           "Subjects": [],
