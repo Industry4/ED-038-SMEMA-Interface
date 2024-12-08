@@ -1,0 +1,164 @@
+{
+  "assembly": "MultiPlug.Ext.Brainboxes",
+  "version": "1.0.15.0",
+  "properties": {
+    "Devices": [
+      {
+        "ConnectButtonEvent": {
+          "Guid": "b78d9402-2506-4ea2-9aba-75142892e8b1",
+          "Id": "f6a3a361-5c4d-4682-98f0-a6d707aafd7d",
+          "Description": "System Event: Connect to device",
+          "Group": "",
+          "Subjects": [],
+          "Keys": []
+        },
+        "RestartButtonEvent": {
+          "Guid": "37837768-93c3-4984-89eb-3a7355423b38",
+          "Id": "c185aea1-f47f-4a47-9a4a-66ab53d775aa",
+          "Description": "System Event: Restart the device",
+          "Group": "",
+          "Subjects": [],
+          "Keys": []
+        },
+        "Name": "RelayIO",
+        "IP": "192.168.1.15",
+        "Guid": "2e7aba6a-6546-4d15-953e-602565b83eff",
+        "MACAddress": "000A4F057C5E",
+        "AutoConnect": true,
+        "Outputs": [
+          {
+            "Name": "0",
+            "Subscriptions": [
+              {
+                "HighSubject": "value",
+                "HighValue": "1",
+                "LowSubject": "value",
+                "LowValue": "0",
+                "Guid": "8e60cd8e-b147-4457-904c-75df8cfa71b0",
+                "Id": "UIToggle45077528-4ff9-4c7a-b0b5-38ef52957923"
+              },
+              {
+                "HighSubject": "value",
+                "HighValue": "1",
+                "LowSubject": "value",
+                "LowValue": "0",
+                "Guid": "99e44494-39f0-44d8-a93b-d0f8105d634e",
+                "Id": "lan1-SMEMAMachineReady[0]"
+              }
+            ]
+          },
+          {
+            "Name": "1",
+            "Subscriptions": [
+              {
+                "HighSubject": "value",
+                "HighValue": "1",
+                "LowSubject": "value",
+                "LowValue": "0",
+                "Guid": "eda1f103-b1fb-4488-990c-c2374440c656",
+                "Id": "UITogglef75b8080-1d54-46f6-be51-b05144e162e2"
+              },
+              {
+                "HighSubject": "value",
+                "HighValue": "1",
+                "LowSubject": "value",
+                "LowValue": "0",
+                "Guid": "abfaa88a-3dc5-41d5-af13-173ec91210de",
+                "Id": "lan1-SMEMAGoodBoardReady[0]"
+              }
+            ]
+          },
+          {
+            "Name": "2",
+            "Subscriptions": [
+              {
+                "HighSubject": "value",
+                "HighValue": "1",
+                "LowSubject": "value",
+                "LowValue": "0",
+                "Guid": "88c22b3e-0411-4b3f-bca2-dde4dbe0a479",
+                "Id": "UIToggled6934bd0-6804-40b0-affa-0ee39459a4a5"
+              },
+              {
+                "HighSubject": "value",
+                "HighValue": "1",
+                "LowSubject": "value",
+                "LowValue": "0",
+                "Guid": "abcc898c-88c8-436f-8943-66b908013050",
+                "Id": "lan1-SMEMABadBoardReady[0]"
+              }
+            ]
+          }
+        ],
+        "IOEvents": [
+          {
+            "IONumber": 0,
+            "RisingEdgeValue": "1",
+            "FallingEdgeValue": "0",
+            "Guid": "37de499d-c29a-441d-aa0a-cb86613ed69c",
+            "Id": "SMEMA-1-B-2",
+            "Description": "SMEMA Lane 1 Port B Good PCB",
+            "Group": "",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          {
+            "IONumber": 1,
+            "RisingEdgeValue": "1",
+            "FallingEdgeValue": "0",
+            "Guid": "2fce23a4-3435-4214-84e0-6b5afcd4f27f",
+            "Id": "SMEMA-1-B-3",
+            "Description": "SMEMA Lane 1 Port B Bad PCB",
+            "Group": "",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          },
+          {
+            "IONumber": 2,
+            "RisingEdgeValue": "1",
+            "FallingEdgeValue": "0",
+            "Guid": "d27cc852-5f7f-4f09-8944-7d491a43757d",
+            "Id": "SMEMA-1-A-1",
+            "Description": "SMEMA Lane 1 Port A Machine Ready",
+            "Group": "",
+            "Subjects": [
+              "value"
+            ],
+            "Keys": [
+              "value"
+            ]
+          }
+        ]
+      }
+    ],
+    "Discovery": {
+      "Properties": {
+        "DiscoverySubscription": {
+          "Guid": "a5a39aa4-1baf-469e-b65b-c6b36d7cdac8",
+          "Id": "SSDP-Brainboxes"
+        },
+        "StartDeviceDiscovery": {
+          "Guid": "6e63864d-f0b1-4889-b9e9-e304f39fe6d1",
+          "Id": "092ffe59-2b73-4b75-8604-5023774b6b80",
+          "Description": "Starts the Device Discovery routine by a user action.",
+          "Group": "",
+          "Subjects": [],
+          "Keys": []
+        }
+      }
+    },
+    "Defaults": {
+      "Key": "value",
+      "RisingEdge": "1",
+      "FallingEdge": "0"
+    }
+  }
+}
