@@ -23,7 +23,7 @@
         "Name": "RelayIO",
         "IP": "192.168.1.15",
         "Guid": "2e7aba6a-6546-4d15-953e-602565b83eff",
-        "MACAddress": "000A4F057C5E",
+        "MACAddress": "",
         "AutoConnect": true,
         "Outputs": [
           {
